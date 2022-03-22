@@ -1,0 +1,68 @@
+<html>
+
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Minesweeper</title>
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+    <link href="style.scss" type="text/scss" />
+    <script type="text/javascript" src="/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=8WGnO_o4GXdP4gBbpFLd-fY4Qg4EsTvWzDk-ymBRDvzROQ49xwpyyULEOVc_nKCTqAJHHMvfto9-hS9LhRzTxg" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9taW5lc3dlZXBlci5kdXp1bi5yZXBsLmNvLw"/><script src="https://unpkg.com/sass.js"></script>
+    <script src="https://unpkg.com/jajax.js"></script>
+    <script>
+        // Compile SASS in the Browser
+        [].slice.call(document.querySelectorAll('link[type="text/scss"]'))
+            .forEach(function(link) {
+                loadSass(link.href)
+                .then(function(css) {
+                    var style = document.createElement('style');
+                    style.setAttribute('href', link.href);
+                    style.type = "text/css";
+                    style.innerText = css;
+                    link.parentNode.insertBefore(style, link);
+                    link.parentNode.removeChild(link);                    
+                })
+            })
+        ;
+
+        function loadSass(scss) {
+            return jajax('style.scss')
+            .then(function(scss) {
+                return new Promise(function(resolve){
+                    Sass.compile(scss, function(result) {
+                        resolve(result.text);
+                    });
+                })
+            });
+        }
+    </script>  
+
+</head>
+<body background="breed-02.webp"
+ text="#FF0000" alink="#333" Bgcolor="#666">
+
+<p align="center"> 
+
+</p>
+
+<font color="#bbb"> Часть текста желтого цвета
+ </font>
+
+<style>
+
+#my-image.img-thumbnail {
+   background-color:  #666;
+}
+
+
+/* IMG radius */
+
+.b-img-radius {
+  border: 2px solid #666;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+</style>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+
+</head>
+<body background="breed-02.webp"
+ text="#FF0000" alink="#333" Bgcolor="#666">
+
+<p align="center"> 
+
+</p>
+
+<font color="#bbb"> Часть текста желтого цвета
+ </font>
+
+<style>
+
+#my-image.img-thumbnail {
+   background-color:  #666;
+}
+
+
+/* IMG radius */
+
+.b-img-radius {
+  border: 2px solid #666;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+</style>
+</body>
+</html>
